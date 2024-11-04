@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    padding: 32px 121px 160px;
+}
+.logo{
+    width: 295px;
+    margin-bottom: 85px;
+}
+.info{
+    display: flex;
+    gap: 161px;
+    flex-wrap: wrap;
+}
+
+ .title{
+    font-size: 16px;
+ }
+.subtitle{
+    font-size: 16px;
+    font-weight: 700px;
+}
+.description {
+font-size: 27px;
+max-width: 930px;
+line-height: 140%;
+margin-bottom: 20%;
+}
+button {
+    width: 328px;
+    cursor: pointer;
+    padding: 20px 0;
+    border-radius: 12px;
+    border: 2px solid #6e3aba;
+    color: white;
+    font-size: 18px;
+}
+
+button.secondary{
+    color: #6e3aba;
+    background-color: white;
+}
+
+#hello {
+        background-image: url(./html_css_js\ 1.png);
+        background-repeat: no-repeat;
+        background-position: top 121px right58px;
+        background-size: 30vw;
+    }
+
+.purpleBg {
+    background-color: #6e3aba;
+}
+
+section.purpleBg {
+    text-align: center;
+    padding-top: calc(40px + (80 - 40) * ((100vw - 375px) / (1280 - 375)));
+    padding-bottom: calc(41px + (88 - 41) * ((100vw - 375px) / (1280 - 375)));
+}
+
+h3 {
+    font-size: calc(34px + (52 - 34) * ((100vw - 375px) / (1280 - 375)));
+    /* как построить уравнение прямой проходящей через вде точки */
+    font-weight: 700;
+    line-height: 117%;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.timer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: calc(20px + (57 - 20) * ((100vw - 375px) / (1280 - 375)));
+    margin-bottom: calc(20px + (57 - 20) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.timerElem .value {
+    font-family: "Chava";
+    font-size: calc(60px + (174 - 60) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 107%;
+    color: #2f1d4e
+}
+
+.timerElem .desc {
+    font-size: calc(10px + (27 - 10) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 500;
+    line-height: 118%;
+    color: #2f1d4e;
+    text-transform: uppercase;
+}
+
+.aboutUs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 100px;
+
+    align-items: end;
+}
+
+.aboutUs h5 {
+    font-size: calc(22px + (27 - 22) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 600;
+    line-height: 140%;
+    text-transform: uppercase;
+
+    grid-row: 2/3;
+}
+
+.stat {
+    font-size: calc(34px + (58 - 34) * ((110vw - 375) / (1280 - 375)));
+    font-weight: 700;
+    line-height: 118%;
+}
+
+.span   {
+    font-size: calc(16px + (21 - 16) * ((110vw - 375) / (1280 - 375)));
+    line-height: 140%;
+}
+
+@media (max-width: 710px) {
+    .diploma {
+        grid-template-columns: 1fr;
+    }
+
+    .diploma img {
+        grid-row: 2/3;
+    }
+    
+    .aboutUs {
+        grid-template-columns: 1fr;
+    }
+
+}
